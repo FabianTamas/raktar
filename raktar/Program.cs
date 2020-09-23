@@ -34,7 +34,7 @@ namespace raktar
 
             for (int i = 0; i < termekek.Count; i++)
             {
-                Console.WriteLine("{0} {1} {2} {3}", termekek[i].Kod, termekek[i].Nev, termekek[i].Ar, termekek[i].Db);
+                Console.WriteLine($"{termekek[i].Kod} {termekek[i].Nev} {termekek[i].Ar} {termekek[i].Db}");
             }
         }
         static void Main(string[] args)
