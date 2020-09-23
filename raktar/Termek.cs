@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,13 +41,12 @@ namespace raktar
 			set { db = value; }
 		}
 
-		public Termek(string kod, string nev, int ar, int db)
+		/*public Termek(string kod, string nev, int ar, int db)
 		{
 			this.kod = kod;
 			this.nev = nev;
 			this.ar = ar;
 			this.db = db;
-		}
-	
+		}*/
 	}
 }
