@@ -23,19 +23,13 @@ namespace raktar
                  * sor[3] -> Darabszám
                  */
                 string[] sor = raktar.ReadLine().Split(';');
-                Termek t = new Termek();
-                t.Kod = sor[0];
-                t.Nev = sor[1];
-                t.Ar = int.Parse(sor[2]);
-                t.Db = int.Parse(sor[3]);
-                termekek.Add(t);
+
+                //Termek t = new Termek(sor[0], sor[1], int.Parse(sor[2]), int.Parse(sor[3]));
+                //termekek.Add(t);
+
+                termekek.Add(new Termek(sor[0], sor[1], int.Parse(sor[2]), int.Parse(sor[3])));
             }
             raktar.Close();
-
-            for (int i = 0; i < termekek.Count; i++)
-            {
-                Console.WriteLine($"{termekek[i].Kod} {termekek[i].Nev} {termekek[i].Ar} {termekek[i].Db}");
-            }
         }
         static void Main(string[] args)
         {
