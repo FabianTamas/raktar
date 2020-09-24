@@ -35,6 +35,11 @@ namespace raktar
         {
             BeolvasRaktar();
 
+            foreach (var t in termekek)
+            {
+                Console.WriteLine(t.Nev);
+            }
+
             Console.ReadKey();
         }
     }
