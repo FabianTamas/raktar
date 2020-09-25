@@ -32,19 +32,14 @@ namespace raktar
 			set { email = value; }
 		}
 
-		private string targyak;
-
-		public string Targyak
-		{
-			get { return targyak; }
-			set { targyak = value; }
-		}
+		public List<string> termekek;
 
 		public Megrendeles(string datum, string rendelesszam, string email)
 		{
 			this.datum = datum;
 			this.rendelesszam = rendelesszam;
 			this.email = email;
+			termekek = new List<string>();
 		}
 	}
 }
