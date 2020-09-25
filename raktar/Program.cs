@@ -52,6 +52,12 @@ namespace raktar
                     megrendelesek[megrendelesek.Count - 1].TetelHozzaad(adat[2], int.Parse(adat[3]));
                 }
             }
+
+            foreach (var m in megrendelesek)
+            {
+                m.Szamolas(termekek);
+            }
+
             rendeles.Close();
         }
 
