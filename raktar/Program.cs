@@ -48,7 +48,8 @@ namespace raktar
                 }
                 else
                 {
-                    megrendelesek[megrendelesek.Count - 1].termekek.Add(sor);
+                    //megrendelesek[megrendelesek.Count - 1].termekek.Add(sor);
+                    megrendelesek[megrendelesek.Count - 1].TetelHozzaad(adat[2], int.Parse(adat[3]));
                 }
             }
             rendeles.Close();
